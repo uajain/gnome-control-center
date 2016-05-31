@@ -186,6 +186,7 @@ cc_panel_class_init (CcPanelClass *klass)
 static void
 cc_panel_init (CcPanel *panel)
 {
+  gtk_widget_set_vexpand (GTK_WIDGET (panel), TRUE);
 }
 
 /**
