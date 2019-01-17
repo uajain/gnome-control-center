@@ -132,14 +132,16 @@ cc_carousel_move_arrow (CcCarousel *self)
          * jump the arrow to the right location instantly. */
         if (animations)
         {
-                css = g_strdup_printf ("@keyframes arrow_keyframes-%d {\n"
+                css = g_strdup_printf ("@keyframes arrow_keyframes-%d-%d {\n"
                                        "  from { margin-left: %dpx; }\n"
                                        "  to { margin-left: %dpx; }\n"
                                        "}\n"
                                        "* {\n"
-                                       "  animation-name: arrow_keyframes-%d;\n"
+                                       "  animation-name: arrow_keyframes-%d-%d;\n"
                                        "}\n",
-                                       end_x, self->arrow_start_x, end_x, end_x);
+                                       self->arrow_start_x, end_x,
+                                       self->arrow_start_x, end_x,
+                                       self->arrow_start_x, end_x);
         }
         else
         {
