@@ -918,17 +918,6 @@ gcm_prefs_calib_export_cb (GtkWidget *widget, CcColorPanel *prefs)
 }
 
 static void
-gcm_prefs_calib_export_link_cb (GtkLabel *widget,
-                                const gchar *url,
-                                CcColorPanel *prefs)
-{
-  gtk_show_uri_on_window (GTK_WINDOW (prefs->main_window),
-                          "help:gnome-help/color-howtoimport",
-                          GDK_CURRENT_TIME,
-                          NULL);
-}
-
-static void
 gcm_prefs_profile_add_cb (GtkWidget *widget, CcColorPanel *prefs)
 {
   g_autoptr(GPtrArray) profiles = NULL;
@@ -2316,8 +2305,6 @@ cc_color_panel_init (CcColorPanel *prefs)
                     G_CALLBACK (gcm_prefs_calib_export_cb), prefs);
   g_signal_connect (prefs->button_calib_upload, "clicked",
                     G_CALLBACK (gcm_prefs_calib_upload_cb), prefs);
-  g_signal_connect (prefs->label_calib_summary_message, "activate-link",
-                    G_CALLBACK (gcm_prefs_calib_export_link_cb), prefs);
 
   g_signal_connect (prefs, "realize",
                     G_CALLBACK (gcm_prefs_window_realize_cb),
