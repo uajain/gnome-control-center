@@ -1,0 +1,144 @@
+pick 04a96edf8 window: Split the window decorations between the header bars (present as 357e94433)
+pick ac46baeac Updated Bulgarian translation
+pick /b05acf5fec Update Dutch translation
+pick f0717b647 Updated Slovenian translation
+pick 91983676e 3.26.1
+pick 812219b77 Updated Slovenian translation
+pick 896f08c35 background: Drop dead background screenshot code (present as 6723ff4d2)
+pick 2ae1c1518 3.26.2
+pick 7fa5c7f7c display: Ignore disabled and closed builtin panels in layout geometry (present as cc329621e)
+pick b923b92b8 Update Friulian translation
+=======not present in upstream master=======
+
+pick de6bf4af5 Update German translation
+pick c3b615c0c Update Croatian translation
+pick 0a57c6758 display: Reset configuration when switching layouting modes (present as 3f3c4bed)
+pick 7d25fa1b0 Update Afrikaans translation
+
+pick 6c9ea5cda Replace "System" by "Settings" category in the desktop file (clean)
+pick 5febe4447 Handle password with ldap (clean)
+pick 2cc3774e1 Use sudo group rather than wheel (clean)
+pick 87ac7b69b Disable deprecation warnings (reworked for meson build system)
+
+pick 886087c43 Fixup help center panel links (merge conflicts)
+pick 96a6a5f17 Remove special color help page links (fixup! for above)
+:
+pick 36129dccb panels: always expand vertically (MC , resolved)
+pick 84eca50c7 background: also monitor the wallpapers directory (manually cherry-picked each hunks reworked for priv, UPDATE: dropped as it was breaking build/)
+pick 5750f58b0 bluetooth: set switch off when BT airplane mode is enabled (merge conflicts, resolved)
+pick c61c6d193 display: adjust output thumbnail to bottom panel (too hard to apply, rework it?)
+pick 22ddc04b1 network: fix Add Connection dialog	 (clean)
+pick ff757046e privacy: add integration with metrics service (manually cherry picked and slightly reworked) -> NEEDS_RE-REVIEW
+pick 739ac889f region: replace the "Login Screen" button (manually cherry-picked and slightly reworked) (packing question).
+pick 94f9d1b52 region: update the locale format along with the language when it changes (manually CP)
+pick ea932e6f6 region: Change "Input Sources" label (manually CP, origin files changed)
+pick 4f9752914 user-accounts: allow empty/weak passwords (manually CP)
+pick 465cfac3f user-accounts: make the name of a shared account not editable (manually CP)
+pick 52e91cd56 user-accounts: disable lock screen when autologin is enabled (manually CP, slightly reworked check functionality) screen lock seems broken
+pick 003a1f332 user-accounts: Allow to set up a password reminder (manually applied, slightly reworked to adjust var/ids names)
+pick c3e363f26 user-accounts: Do not suggest usernames that are too long (drop in favour of 09b94a9b539056bedb1 and a41780267)
+pick 939c92b07 user-accounts: Hide username from new account dialog (dropped as new accouint UI changed a lot, revisit this)
+pick dfee1f8dd user-accounts: Rearrange choice of default usernames (dropped in conjunction to 939c92b07, why hide and re-arrange)
+pick 56f605f04 user-accounts: Fall back to "user" as the default login name (manually CP)
+pick 5a92726ae user-accounts: Allow account creation when name contains no ASCII (manually CP)
+pick 1b7497ee0 user-accounts: Allow to create a user without a password (manually CP, slightly reworked)
+pick 28ff23ff7 user-accounts: Allow to remove the password for a user (manually CP)
+pick 5fdb584f7 user-accounts: Show the correct password mode when changing it (manuualy CP)
+pick 35c209027 user-accounts: Allow to change the password mode for oneself (manually CP)
+pick 3874c0364 user-accounts: Make labels consitent between password and account dialogs (squashed in 28ff23ff7, 35c209027 and 1b7497ee0)
+pick 2e8c33ffa user-accounts: Fix using the same label for set-password-on-login option (squashed in 28ff23ff7)
+pick 30bc15d43 update language chooser to match FBE (beautifully cherry-picked)
+pick 6ebcfb9b4 info: add link for license attribution document (manually CP)
+pick c4ed94720 info: Remove PackageKit-based updates UI (manually CP)
+pick 2c45c457d info: add a way to check for manual updates (drop as reverted)
+pick 15f6e8cf7 info: report Endless version instead of GNOME version (manually CP)
+pick a31428d9d info: allow defining vendor specific logos (TODO)
+pick 1c24ddbbc info: use UDisks to retrieve disk size (upstream in 2520aea6)
+pick 211c774e9 user panel, password: add fallback kbd layout if necessary (TODO as too hard too aply)
+pick 9fad5d5cc panels: Add content sharing options to sharing dialog (TODO companion app bit)
+pick 3a14354ce sharing: use flatpak_installation_get_current_installed_app(related with questionable parent commit 9fad5d5cc)
+pick f6d93c700 Add Transifex translation infrastructure (drop)
+pick 0fb44b76f display: Add a method to retrieve the name of a monitor mode (manually CP)
+pick 91951466d network: Turn metered data switch into a check button (upstreamed in 24abbcf3030af2bfb3e64c17fe746539e0864e31)
+pick 1e2403368 updates: Introduce Automatic Updates panel
+pick 328156e25 sharing: fix case in content sharing description
+pick dd49ef858 updates: Create recurring tariff periods in the user’s local timezone
+pick aa887b225 updates: React to network changes
+pick 31b2a45c4 updates: Move error bail to end of store_automatic_updates_setting()
+pick becc17203 updates: Don’t load NM changes while saving NM changes
+pick d62457ef9 Remove .pot from gitignore
+pick 52ad3e89c Commit .pot file
+pick bbb07a391 Add translation support for several new languages
+pick 2bfe1da22 Latest translations from Transifex
+pick 9f54c27ba Merged with downstream translation in Transifex
+pick 17f7914d3 Re-apply intentional downstream translations
+pick 0121a462c info: Revert EOS updates integration
+pick b0b30f45f info: Add a notice about updates being managed in the App Center
+pick f2d101cb2 Update to .pot file for the OS upgrades notice
+pick 9cca82a1d updates: Update setting description
+pick 073cd6131 Update to pot file
+pick d418f4972 updates: Use connection.allow-downloads setting
+pick 3cd304033 updates: Don't convert tariff timezone
+pick cee49b411 Don't declare StartupNotify=true in panel-specific desktop files
+pick b9ae48d49 Updates from Transifex
+pick a73aba9c2 fixup! updates: Introduce Automatic Updates panel
+pick 75757ecd5 fixup! updates: Introduce Automatic Updates panel
+pick 91bbafab0 Updates from Transifex
+pick c38eb9385 Update submodule URLs
+pick eed7d3709 wifi: show generic "network" help page
+pick 7eab8b944 display: Sync scale button state after update
+pick 8ef9fe797 display: Hide unsupported resolutions again
+pick 28084df6c user-accounts: add build flag and env variable to override faces dir
+pick 9810e411f user-accounts: use vendor file for alternative faces directory
+pick ca7a3a70a panels: Add X-GNOME-UsesNotifications to several desktop files
+pick 729251331 info: Support multi product EULA
+pick 2e6bedce0 Move VENDOR_CONF_FILE to config.h
+pick 11ed77fce background: Add support for vendor file wallpaper directory
+pick a7ac113ae background: Allow load background file relative to XML file
+pick fac5f6c7e build: Add eos-parental-controls-0 and flatpak dependencies
+pick d375308fb Add App Permissions section
+pick bc3edd4cc user-accounts: Gracefully handle not-installed flatpak apps
+pick 35d5fe11a user-accounts: Handle whitespace in X-Flatpak .desktop file values
+pick 36cc4249e user-accounts: Gracefully handle non-found programs
+pick d8e79c901 user-accounts: Fix getting flatpak refs for system-installed apps
+pick 522d6828e Update gnome-control-center.pot
+pick c2ef5a4ed user-accounts: Add a permission property to UmAppPermissions
+pick 31d5b5617 user-accounts: Desensitise parental controls widgets if applet is locked
+pick b8500928e user-accounts: Hide the parental controls for administrator accounts
+pick 6bb05134a user-accounts: Factor out a helper function
+pick 2d79f84a7 user-accounts: Fix race condition when switching users
+pick 9e512c156 user-accounts: Chain parental controls polkit actions to existing one
+pick 7a380fd4b user-accounts: Fix parsing of locales to work out content rating systems
+pick 7e44b3dd7 user-accounts: Add additional CSM ↔ OARS mappings to fix round trips
+pick 86a80c299 user-accounts: Update categories for ESRA rating system
+pick e09d42706 user-accounts: Drop locale suffix handling workaround
+pick 8cb130e25 user-accounts: Handle resetting OARS to unrestricted for accounts
+pick 532343eff user-accounts: Don’t list non-flatpak apps in parental controls
+pick 6b98271fd Update ar, es, fr, id, pt_BR translations
+pick a1036b11e Update other language translations
+pick 308dddcfc user-accounts: Make sense of ON/OFF switches more obvious
+pick 708d964c8 user-accounts: Add mnemonics to app permissions UI
+pick b38f01fd4 user-accounts: Add parental controls keywords to the desktop file
+pick 0051b210f user-accounts: Add scrolled window to user accounts dialogue
+pick 1489b5c20 user-accounts: Fix carousel arrow location when animations are disabled
+pick 8adc172fa user-accounts: Use a more specific GtkSettings object
+pick 08f18d1a2 user-accounts: Disable system app installation if user installation is
+pick 447b6ce05 user-accounts: Allow ‘Remove User’ button to be focused
+pick 7ef6d7134 user-accounts: Allow longer labels to wrap if translations are long
+pick 5c47e4440 user-accounts: Add missing GActionEntry initialisers
+pick a92cdcca4 user-accounts: Allow OARS filtering to be disabled
+pick 6e28d059c user-accounts: Reload parental controls app list when apps are installed
+pick 4d6a1a726 user-accounts: Hide apps with duplicate flatpak IDs
+pick c17271d96 updates: Add additional keywords to ‘Automatic Updates’ panel
+pick 53aef0647 network: Add mnemonic for ‘Restrict background data usage’ checkbox
+pick f65fee205 user-accounts: Use ‘No Restriction’ rather than ‘Disabled’ for ages
+pick 265d756ac Update gnome-control-center.pot
+pick 104de7bc1 Update translations from Transifex
+pick cb3387336 search: Filter list of search providers according to parental controls
+pick e8c7c9f96 user-panels: Limit full name length
+pick df2c75c10 user-accounts: Ellipsize real name label
+pick 16c177469 user-accounts: Limit to 80 characters
+pick faddf65d2 background: Stop using a custom XDG dir for wallpapers
+pick 9f3879d37 user-accounts: vertically centre per-app switches
+
+
