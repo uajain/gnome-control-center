@@ -438,7 +438,7 @@ setup_parental_control_settings (CcAppPermissions *self)
   gboolean is_authorized, user_is_administrator;
   g_autoptr(GError) error = NULL;
 
-  system_bus = g_bus_get_sync (G_BUS_TYPE_SYSTEM, self->cancellable, error);
+  system_bus = g_bus_get_sync (G_BUS_TYPE_SYSTEM, self->cancellable, &error);
   if (system_bus == NULL)
     {
       g_warning ("Error getting system bus for setting up parental controls: %s", error->message);

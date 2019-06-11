@@ -125,7 +125,7 @@ gs_content_rating_key_value_to_str (const gchar *id, MctAppFilterOarsValue value
 	{ "violence-sexual",	MCT_APP_FILTER_OARS_VALUE_INTENSE,
 	/* TRANSLATORS: content rating description */
 	_("Rape or other violent sexual behavior") },
-	{ "drugs-alcohol",	MCt_APP_FILTER_OARS_VALUE_NONE,
+	{ "drugs-alcohol",	MCT_APP_FILTER_OARS_VALUE_NONE,
 	/* TRANSLATORS: content rating description */
 	_("No references to alcohol") },
 	{ "drugs-alcohol",	MCT_APP_FILTER_OARS_VALUE_MILD,

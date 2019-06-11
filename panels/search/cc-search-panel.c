@@ -685,7 +685,7 @@ search_providers_discover_thread (GTask *task,
   int idx;
   GError *local_error = NULL;
 
-  system_bus = g_bus_get_sync (G_BUS_TYPE_SYSTEM, self->cancellable, &local_error);
+  system_bus = g_bus_get_sync (G_BUS_TYPE_SYSTEM, cancellable, &local_error);
   if (system_bus == NULL)
     {
       g_task_return_error (task, g_steal_pointer (&local_error));
@@ -696,7 +696,7 @@ search_providers_discover_thread (GTask *task,
   /* Load the user’s parental controls settings too, so we can filter the list. */
   filter = mct_manager_get_app_filter (manager,
                                        getuid (),
-                                       MCT_GET_APP_FILTER_FLAGS_INTERACTIVE,,
+                                       MCT_GET_APP_FILTER_FLAGS_INTERACTIVE,
                                        cancellable,
                                        &local_error);
 
